@@ -30,7 +30,7 @@ Esta aplicação foi feita a partir do curto Ignite - RocketSeat (2021). Simula 
 ## Tipos de Aplicações Next.JS
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/robertomorel/ig-news/master/src/assets/single-page-application.jpeg" alt="" width="300"/>
+  <img src="https://raw.githubusercontent.com/robertomorel/ig-news/master/src/assets/single-page-application.jpeg" alt="" width="400"/>
 </div>
 
 ### Client-Side
@@ -46,7 +46,7 @@ Esta aplicação foi feita a partir do curto Ignite - RocketSeat (2021). Simula 
 - Possibilidade de pegar dados do usuário para alimentar alguma regra ou interface.
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/robertomorel/ig-news/master/src/assets/server-side-rendering.jpeg" alt="" width="300"/>
+  <img src="https://raw.githubusercontent.com/robertomorel/ig-news/master/src/assets/server-side-rendering.jpeg" alt="" width="400"/>
 </div>
 
 ### Static-Side
@@ -54,7 +54,7 @@ Esta aplicação foi feita a partir do curto Ignite - RocketSeat (2021). Simula 
 - Gerar o HTML de uma página de forma que qualquer cliente acesse de forma igual, independente de sessão do usuário.
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/robertomorel/ig-news/master/src/assets/static-side-generation.jpeg" alt="" width="300"/>
+  <img src="https://raw.githubusercontent.com/robertomorel/ig-news/master/src/assets/static-side-generation.jpeg" alt="" width="400"/>
 </div>
 
 
