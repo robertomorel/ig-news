@@ -51,9 +51,20 @@ export default function PostPreview({ post }: PostPreviewProps) {
   )
 }
 
+/**
+ * fallback
+ *    true: Sempre que o user tentar acessar uma rota que ainda não foi acessada estaticamente, 
+ *          o next vai gerar automaticamente 
+ *    false: Se o user tentar acessar uma rota que ainda não foi acessada estaticamente (pelo build), 
+ *           o next não vai reconhecer o path e vai dar 404
+ *    blocking: Quando acessamos um conteúdo que ainda não foi gerado de forma estática, 
+ *              vai tentar carregar o conteúdo novo, mas na camada do next ServerSideRendering 
+ *              e quando estiver tudo carregado, vai mostrar o HMTL
+ */
 export const getStaticPaths = () => {
   return {
-    paths: [],
+    paths: [], // Quero que todos os posts sejam mostrados no preview de forma estática
+    //paths: [{ params: { slug: 'slug1' }}], //Quero apenas que o slug1 seja mostrado no preview
     fallback: 'blocking'
   }
 }
