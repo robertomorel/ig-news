@@ -1,0 +1,26 @@
+- NextJS API Routes -
+
+Cada arquivo que colocaremos aqui serão transformados em rotas de backend (endpoint)
+
+Se criarmos um arquivo chamado api/users (localhost:3000/api/users) terá como retorno os usuários cadastrados
+
+Tudo o que é executado na pasta "api" não é visível ao cliente final. Apenas os dados.
+
+Todas as APIs Routes usam o conceito de serveless
+    - Qndo a aplicação Next é deployada, qndo é enviada para produção, as rotas da pasta API não formam um servidor
+    - Não fica um servidor Express ou Node que fica 24 hrs rodando aguardando requisições para as rotas.
+    - Passos:
+        - O servidor serveless sobe uma espécie de "máquina virtual"/ambiente isolado
+        - Acessa à uma função específica 
+        - Qndo a função devolve a resposta, o ambiente é destruído
+        - Ou seja, só sobe e desce ambiente à medida que as rotas são chamadas
+
+
+----------------------------
+Se criarmos um arquivo chamado api/users/[id] e no browser acessar localhost:3000/api/users/1,
+vou poder ter acesso à uma variável de query do request
+request.query = {id: '1'}
+
+Se criarmos um arquivo chamado api/users/[...params] e no browser acessar localhost:3000/api/users/edit/1/detail,
+vou poder ter acesso à uma variável de query do request
+request.query = {params: ['edit', '1', 'detail']}

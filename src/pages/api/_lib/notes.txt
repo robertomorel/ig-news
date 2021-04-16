@@ -1,0 +1,3 @@
+A pasta _lib está com o _ na frente para não se tornar uma roda.
+
+--> Todo arquivo dentro de API se torna uma API Route, contanto que não possua este _
